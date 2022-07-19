@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\Змейка\Змейка\bin\Debug\Змейка.exe.config
+C:\Users\user\Desktop\Змейка\Змейка\bin\Debug\Змейка.exe
+C:\Users\user\Desktop\Змейка\Змейка\bin\Debug\Змейка.pdb
+C:\Users\user\Desktop\Змейка\Змейка\obj\Debug\Змейка.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Змейка\Змейка\obj\Debug\Змейка.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Змейка\Змейка\obj\Debug\Змейка.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Змейка\Змейка\obj\Debug\Змейка.exe
+C:\Users\user\Desktop\Змейка\Змейка\obj\Debug\Змейка.pdb

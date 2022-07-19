@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Змейка", "Змейка\Змейка.csproj", "{1AD840B7-F854-49E9-AD4B-1801599E9E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Змея", "Змея\Змея.csproj", "{8556E66F-28D1-4160-98BC-54017D5C2F46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AD840B7-F854-49E9-AD4B-1801599E9E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD840B7-F854-49E9-AD4B-1801599E9E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD840B7-F854-49E9-AD4B-1801599E9E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD840B7-F854-49E9-AD4B-1801599E9E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8556E66F-28D1-4160-98BC-54017D5C2F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8556E66F-28D1-4160-98BC-54017D5C2F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8556E66F-28D1-4160-98BC-54017D5C2F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8556E66F-28D1-4160-98BC-54017D5C2F46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF544DDF-A9FE-4C58-8244-005C734BA5DC}
+	EndGlobalSection
+EndGlobal
