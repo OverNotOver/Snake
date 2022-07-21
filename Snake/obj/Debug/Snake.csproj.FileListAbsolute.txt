@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\Змейка\Snake\bin\Debug\Snake.exe.config
+C:\Users\user\Desktop\Змейка\Snake\bin\Debug\Snake.exe
+C:\Users\user\Desktop\Змейка\Snake\bin\Debug\Snake.pdb
+C:\Users\user\Desktop\Змейка\Snake\obj\Debug\Snake.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Змейка\Snake\obj\Debug\Snake.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Змейка\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Змейка\Snake\obj\Debug\Snake.exe
+C:\Users\user\Desktop\Змейка\Snake\obj\Debug\Snake.pdb

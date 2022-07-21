@@ -458,42 +458,11 @@ namespace Змейка
 
 
 
-
-
-
-
-
-
-
-
-
-
-
             ////
 
         }
 
-        static void Apples()
-        {
-            Random rand = new Random();
-            land[rand.Next(1, 19), rand.Next(1, 19)] = applePoint;
-
-            for (int i = 0; i < land.GetLength(0); i++) //стоблцы
-            {
-                Console.Write("\t");
-                for (int j = 0; j < land.GetLength(1); j++) //строки
-                {
-                    if (land[i, j] == applePoint)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.Write("@");
-                        Console.ResetColor();
-                    }
-                }
-                Console.WriteLine();
-            }
-
-        }
+      
 
 
 
