@@ -87,8 +87,8 @@ namespace Snake
             if (appleFind == false)
             {
                 Random rand = new Random();
-                int xApple = rand.Next(1, land.GetLength(0));
-                int yApple = rand.Next(1, land.GetLength(1));
+                int xApple = rand.Next(1, land.GetLength(0) - 1);
+                int yApple = rand.Next(1, land.GetLength(1) - 1);
                 land[xApple, yApple] = -1;
             }
 
@@ -97,8 +97,50 @@ namespace Snake
 
         static void SnakeGo()
         {
-           
+            
+            int xSnake = 0;
+            int ySnake = 0;
 
+            for(int i = 0; i < land.GetLength(0); i++)
+            {
+                for(int j = 0; j < land.GetLength(1); j++)
+                {
+                    if(land[i, j] == 2)
+                    {
+                        xSnake = i;
+                        ySnake = j; 
+                    }
+                       
+                }
+            }
+
+
+
+            if (Up && xSnake > 1)
+            {
+                land[xSnake, ySnake] = 0;
+                xSnake--;
+                land[xSnake, ySnake] = 2;
+
+            }
+            else if(Down && xSnake < land.GetLength(0) - 2)
+            {
+                land[xSnake, ySnake] = 0;
+                xSnake++;
+                land[xSnake, ySnake] = 2;
+            }
+            else if(Rigth && ySnake < land.GetLength(1) - 2)
+            {
+                land[xSnake, ySnake] = 0;
+                ySnake++;
+                land[xSnake, ySnake] = 2;
+            }
+            else if(Left && ySnake > 1)
+            {
+                land[xSnake, ySnake] = 0;
+                ySnake--;
+                land[xSnake, ySnake] = 2;
+            }
 
 
         }
@@ -111,12 +153,13 @@ namespace Snake
             Console.CursorVisible = false;
             while (true)
             {
-
+                SnakeGo();
                 AppleSpayn();
                 PrintLand();
                 KeyGo();
-                Console.ReadKey();
-          
+                
+
+
             }
         }
 
@@ -132,7 +175,7 @@ namespace Snake
                         Up = true;
                         Rigth = false;
                         Left = false;
-                        Console.WriteLine("вверх");
+                  
                     }                   
                     break;
                 case ConsoleKey.RightArrow:
@@ -141,7 +184,6 @@ namespace Snake
                         Rigth = true;
                         Up = false;
                         Down = false;
-                        Console.WriteLine("вправо");
                     }
             
                     break;
@@ -151,7 +193,6 @@ namespace Snake
                         Left = true;
                         Up = false;
                         Down = false;
-                        Console.WriteLine("влево");
                     }
               
                     break;
@@ -161,7 +202,6 @@ namespace Snake
                         Down = true;
                         Left = false;
                         Rigth = false;
-                        Console.WriteLine("вниз");
                     }           
                     break;
               
