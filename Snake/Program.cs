@@ -16,7 +16,7 @@ namespace Snake
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
-                {1,0,0,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
@@ -35,22 +35,22 @@ namespace Snake
 
         static void PrintLand()
         {
-
-            for(int i = 0; i < land.GetLength(0); i++)
+            Console.Clear();
+            for (int i = 0; i < land.GetLength(0); i++)
             {
                 for (int j = 0; j < land.GetLength(1); j++)
                 {
-                    if(land[i,j] == 1)
+                    if (land[i, j] == 1)
                     {
                         Console.Write("[]");
-                       
-                      
+
+
                     }
                     else if (land[i, j] == 2)
                     {
                         Console.Write("0>");
                     }
-                    else if (land[i,j] == -1)
+                    else if (land[i, j] == -1)
                     {
                         Console.Write("()");
                     }
@@ -66,16 +66,42 @@ namespace Snake
 
         }
 
+        static void AppleSpayn()
+        {
+            bool appleFind = false;
+            for(int i = 0; i < land.GetLength(0); i++)
+            {
+                for (int j = 0; j < land.GetLength(1); j++)
+                {
+                    if(land[i, j] == -1)
+                    {
+                        appleFind = true;                      
+                    }
+                }
+            }
+
+            if (appleFind == false)
+            {                           
+                Random rand = new Random();
+                int xApple = rand.Next(1, land.GetLength(0));
+                int yApple = rand.Next(1, land.GetLength(1));
+                land[xApple, yApple] = -1;
+            }
+
+
+        }
 
 
         static void Main(string[] args)
         {
-            Console.SetWindowSize(41, 20);
-            Console.SetBufferSize(41, 20);
+            Console.SetWindowSize(41, 21);
+            Console.SetBufferSize(41, 21);
             Console.CursorVisible = false;
             while (true)
             {
+                AppleSpayn();
                 PrintLand();
+
 
                 Console.ReadKey();
             }
