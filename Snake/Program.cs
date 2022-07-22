@@ -67,7 +67,7 @@ namespace Snake
                     else if (land[i, j] == -1)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.Write("()");
+                        Console.Write("{}");
                         Console.ResetColor();
                     }
                     else
@@ -280,29 +280,37 @@ $$ |  $$ |  \$$$  /  $$   ____|$$ |
 
         static void SnakeSpeed()
         {
-            if (counterApples <= 3)
-            {
-                Thread.Sleep(30);
-            }
-            else if (counterApples > 3 && counterApples < 7)
-            {
-                Thread.Sleep(150);
-            }
-            else if (counterApples > 7 && counterApples < 10)
-            {
-                Thread.Sleep(100);
-            }
-            else if (counterApples > 10 && counterApples < 15)
-            {
-                Thread.Sleep(70);
-            }
-            else if (counterApples > 15 && counterApples < 20)
+            if (counterApples <= 5)
             {
                 Thread.Sleep(50);
             }
-            else if (counterApples >= 20)
+            else if (counterApples > 5 && counterApples <= 10)
             {
-                Thread.Sleep(30);
+                Thread.Sleep(70);
+            }
+            else if (counterApples > 10 && counterApples <= 15)
+            {
+                Thread.Sleep(100);
+            }
+            else if (counterApples > 15 && counterApples <= 20)
+            {
+                Thread.Sleep(130);
+            }
+            else if (counterApples > 20 && counterApples <= 25)
+            {
+                Thread.Sleep(150);
+            }
+            else if (counterApples > 25 && counterApples <= 30)
+            {
+                Thread.Sleep(170);
+            }
+            else if (counterApples > 30 && counterApples <= 40)
+            {
+                Thread.Sleep(190);
+            }
+            else if (counterApples > 40)
+            {
+                Thread.Sleep(200);
             }
             else
             {
@@ -389,7 +397,7 @@ $$ |  $$ |  \$$$  /  $$   ____|$$ |
             {
                 
                 KeyGo();
-                Thread.Sleep(100);
+                Thread.Sleep(70);
             }
         }
     }

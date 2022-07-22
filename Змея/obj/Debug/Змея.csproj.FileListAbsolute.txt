@@ -1,8 +1,0 @@
-C:\Users\user\Desktop\Змейка\Змея\bin\Debug\Змея.exe.config
-C:\Users\user\Desktop\Змейка\Змея\bin\Debug\Змея.exe
-C:\Users\user\Desktop\Змейка\Змея\bin\Debug\Змея.pdb
-C:\Users\user\Desktop\Змейка\Змея\obj\Debug\Змея.csproj.AssemblyReference.cache
-C:\Users\user\Desktop\Змейка\Змея\obj\Debug\Змея.csproj.SuggestedBindingRedirects.cache
-C:\Users\user\Desktop\Змейка\Змея\obj\Debug\Змея.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\Змейка\Змея\obj\Debug\Змея.exe
-C:\Users\user\Desktop\Змейка\Змея\obj\Debug\Змея.pdb
